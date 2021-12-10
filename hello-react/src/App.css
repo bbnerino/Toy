@@ -1,5 +1,11 @@
-.heyhey{
-  font-size:50px;
-  color:aqua;
+.heyhey {
+  font-size: 50px;
+  color: aqua;
   background-color: black;
+}
+.success {
+  background-color: lightgreen;
+}
+.failure {
+  background-color: lightcoral;
 }

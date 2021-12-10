@@ -7,7 +7,7 @@ const Say = () =>{
 
   const[color,setColor] = useState('pink')
   return(
-    <div>
+    <div >
       <button onClick={onClickEnter}>입장</button>
       <button onClick={onClickLeave}>퇴장</button>
       <br></br>
