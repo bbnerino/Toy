@@ -6,7 +6,7 @@ import React,{Component} from "react";
 // import ValidationSample from "./components/ValidationSample";
 // import RefSample from "./components/RefSample";
 import ScrollBox from "./components/ScrollBox";
-
+import IterationSample from './components/IterationSample'
 
 class App extends Component{
   render(){
@@ -25,6 +25,7 @@ class App extends Component{
         <button onClick={()=>this.ScrollBox.scrollToBottom()}>
             맨 밑으로
         </button>
+        <IterationSample/>
       </div>
     )
   }
