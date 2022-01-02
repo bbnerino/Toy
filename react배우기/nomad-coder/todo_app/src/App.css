@@ -1,0 +1,4 @@
+ul > .complete {
+  text-decoration: line-through;
+  color: rgb(45, 173, 131);
+}
