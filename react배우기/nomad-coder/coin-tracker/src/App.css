@@ -1,0 +1,10 @@
+div div input {
+  width: 60px;
+  height: 40px;
+  background-color: rgb(241, 208, 124);
+  color: rgb(163, 63, 63);
+  font-size: 30px;
+}
+div div .inline {
+  display: inline;
+}
