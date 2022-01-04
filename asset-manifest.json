@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Toy/static/css/main.e6c13ad2.css",
-    "main.js": "/Toy/static/js/main.274ee20e.js",
-    "index.html": "/Toy/index.html",
-    "main.e6c13ad2.css.map": "/Toy/static/css/main.e6c13ad2.css.map",
-    "main.274ee20e.js.map": "/Toy/static/js/main.274ee20e.js.map"
+    "main.css": "/Toy/react%EB%B0%B0%EC%9A%B0%EA%B8%B0/nomad-coder/movie-app/static/css/main.e6c13ad2.css",
+    "main.js": "/Toy/react%EB%B0%B0%EC%9A%B0%EA%B8%B0/nomad-coder/movie-app/static/js/main.274ee20e.js",
+    "index.html": "/Toy/react%EB%B0%B0%EC%9A%B0%EA%B8%B0/nomad-coder/movie-app/index.html",
+    "main.e6c13ad2.css.map": "/Toy/react%EB%B0%B0%EC%9A%B0%EA%B8%B0/nomad-coder/movie-app/static/css/main.e6c13ad2.css.map",
+    "main.274ee20e.js.map": "/Toy/react%EB%B0%B0%EC%9A%B0%EA%B8%B0/nomad-coder/movie-app/static/js/main.274ee20e.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
