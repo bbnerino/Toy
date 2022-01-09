@@ -1,0 +1,12 @@
+.navbar {
+  font-size: large;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: green;
+}
+a:hover {
+  color: red;
+  transition: 0.5s ease-in;
+}

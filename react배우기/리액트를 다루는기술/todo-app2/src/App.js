@@ -3,6 +3,7 @@ import './App.css';
 import TodoTemplate from './TodoTemplate';
 import TodoInsert from './TodoInsert';
 import TodoList from './TodoList'
+import { useDispatch, useSelector } from 'react-redux';
 
 function App() {
   const [todos,setTodos]= useState([
@@ -39,8 +40,13 @@ function App() {
       )
     },[todos]
   )
+  const 꺼내온거 = useSelector((state)=>state)
+  const dispatch = useDispatch()
   return (
     <div>
+      <p>{꺼내온거}</p>
+      <button onClick={()=>{dispatch({type:'증가'})}}>더하기</button>
+      <button onClick={()=>{dispatch({type:'감소'})}}>빼기</button>
       <TodoTemplate>
         <TodoInsert onInsert={onInsert}/>
         <TodoList onToggle={onToggle} onRemove={onRemove} todos={todos}/>
