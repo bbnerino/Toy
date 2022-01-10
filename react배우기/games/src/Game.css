@@ -1,3 +1,30 @@
 .container {
   text-align: center;
 }
+.RSP {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.myturn {
+  flex: 1;
+}
+.comturn {
+  flex: 1;
+}
+.win {
+  color: rgb(68, 68, 248);
+  font-size: 5rem;
+}
+.lose {
+  color: red;
+  font-size: 5rem;
+}
+.draw {
+  color: rgb(37, 202, 31);
+  font-size: 5rem;
+}
+img {
+  height: 300px;
+}
