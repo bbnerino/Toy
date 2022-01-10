@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react"
-
+import "./Game.css"
 const Gugudan = ()=>{
   const [num1,setNum1] =useState(Math.floor(Math.random()*9)+1)
   const [num2,setNum2] =useState(Math.floor(Math.random()*9)+1)
@@ -24,10 +24,10 @@ const Gugudan = ()=>{
     setAnswer("")
     setNum1(Math.floor(Math.random()*9)+1)
     setNum2(Math.floor(Math.random()*9)+1)
-  },[answer])
+  },[answer,num1,num2,score])
 
   return(
-    <div>
+    <div className="container">
       <h1>{num1} 곱하기 {num2}은?</h1>
       <form onSubmit={onSubmit} >
         <input 
