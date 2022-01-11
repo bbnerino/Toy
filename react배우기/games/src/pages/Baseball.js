@@ -69,7 +69,7 @@ const Baseball = ()=>{
       :<div>
       {tries.map((tr,i)=>{
         return(
-        <div>{tr.try} ⚾ {tr.result}</div>)
+        <div key={i}>{tr.try} ⚾ {tr.result}</div>)
       })}
     </div>}
       

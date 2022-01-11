@@ -5,6 +5,8 @@ const Rock = ()=>{
   const [myturn,setMyturn] = useState('')
   const [comturn,setComturn] = useState('')
   const [win,setWin] = useState('')
+  const [score,setScore] = useState(0)
+  const [bestscore,setBestscore] = useState(0)
 
   const onClick = (e)=>{
     const RSP = ["가위","바위","보"]
@@ -21,14 +23,21 @@ const Rock = ()=>{
         (comturn==="바위"&myturn==="가위")|
         (comturn==="보" & myturn==="바위") ){
       setWin("lose")
+      setScore(0)
     }
     else if((myturn==="가위" & comturn==="보")|
     (myturn==="바위"&comturn==="가위")|
     (myturn==="보" & comturn==="바위") ){
       console.log(myturn,comturn)
       setWin("win")
+      setScore(score+1)
     }
   },[myturn,comturn])
+  useEffect(()=>{
+    if (score>bestscore){
+      setBestscore(score)
+    }
+  },[score])
 
   useEffect(()=>{
     console.log(myturn,comturn)
@@ -49,16 +58,18 @@ const Rock = ()=>{
           {myturn==="보"?<img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbmjB2s%2FbtqXHhp6kpG%2FTH14W4U612SxKo9uuR2sB0%2Fimg.png'/>:""}
           {myturn==="가위"?<img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHfURw%2FbtqXKvOTNWK%2FgWTwPXEg9QzSV0ilOuwuak%2Fimg.png'/>:""}
           {myturn==="바위"?<img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpSJwo%2FbtqXJV1lACE%2Fnx5XrxkCLWXh9UsnoS8vbK%2Fimg.png'/>:""}
-          <h1>나:{myturn}</h1>
+          <h1>나</h1>
         </div>
         <div className="comturn">
           {comturn==="보"?<img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbmjB2s%2FbtqXHhp6kpG%2FTH14W4U612SxKo9uuR2sB0%2Fimg.png'/>:""}
           {comturn==="가위"?<img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHfURw%2FbtqXKvOTNWK%2FgWTwPXEg9QzSV0ilOuwuak%2Fimg.png'/>:""}
           {comturn==="바위"?<img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpSJwo%2FbtqXJV1lACE%2Fnx5XrxkCLWXh9UsnoS8vbK%2Fimg.png'/>:""}
-          <h1>컴퓨터:{comturn}</h1>
+          <h1>컴퓨터</h1>
         </div>
       </div>
           <h1 className={`${win}`}>{win}</h1>
+          <h1>점수 : {score}</h1>
+          <h3>최고점수 : {bestscore}</h3>
     </div> 
   )
 }
