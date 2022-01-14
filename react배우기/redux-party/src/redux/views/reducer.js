@@ -7,7 +7,7 @@ const viewReducer = (state=initialState,action)=>{
     case ADD_VIEW:
       return {
         ...state,
-        count:state.count+1
+        count:state.count+action.payload
       }
     case REMOVE_VIEW:
       return {
