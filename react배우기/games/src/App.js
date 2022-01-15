@@ -4,7 +4,7 @@ import UserStore from './store/users'
 import routes from './routes'
 function App() {
   return (
-    <UserStore>
+    <UserStore >
       <div className='App'>
         <div className='navbar'>
           {routes.map(route=>{return(
