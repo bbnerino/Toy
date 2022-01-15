@@ -1,0 +1,23 @@
+
+.Navbar {
+  // font-size: large;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  
+  a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    
+    font-weight: 1000;
+    color: black;
+    flex:1;
+    &:hover{
+      background-color: rebeccapurple;
+      color: rgb(194, 185, 202);
+      transition: 1s ease-in;
+      flex:6;
+    }
+  }
+}
