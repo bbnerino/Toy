@@ -1,0 +1,9 @@
+.done{
+  display: inline;
+  background-color: yellow;
+  text-decoration: line-through;
+}
+.yet{
+  display: inline;
+  background-color: tomato;
+}
