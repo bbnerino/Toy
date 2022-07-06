@@ -5,6 +5,7 @@ import UserCheck from "./pages/UserCheck"
 import Rock from "./pages/Rock"
 import Users from "./pages/Users"
 import User from './pages/User'
+import Transition from "./pages/Transition"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
@@ -41,7 +42,12 @@ export default [
   {
     path:'/users/:id',
     component:User,
+  },
+  {
+    path:'/transition',
+    component:Transition
   }
+
 ]
 
 
