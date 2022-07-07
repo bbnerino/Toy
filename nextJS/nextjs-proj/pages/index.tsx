@@ -5,9 +5,9 @@ const Home = ()=>{
   return (
     <div>
       <h1>HOME입니다요</h1>
-      <style >
+      <style>
         a{`
-          font-weight:1000;
+          font-weight:1000; 
         `}
       </style>
     </div>
