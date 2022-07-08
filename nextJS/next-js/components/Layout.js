@@ -3,7 +3,6 @@ const Layout = ({children}) => {
   return (
     <>
       <NavBar/>
-      <footer>하이</footer>
     </>
   )
 }
